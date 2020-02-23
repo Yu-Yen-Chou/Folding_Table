@@ -15,6 +15,10 @@
 		AC4168DA2402589D00781B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4168D82402589D00781B89 /* LaunchScreen.storyboard */; };
 		AC4168E52402589D00781B89 /* Folding_TableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4168E42402589D00781B89 /* Folding_TableTests.swift */; };
 		AC4168F02402589D00781B89 /* Folding_TableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4168EF2402589D00781B89 /* Folding_TableUITests.swift */; };
+		AC4168FF2402597300781B89 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4168FE2402597300781B89 /* SectionView.swift */; };
+		AC4169012402597F00781B89 /* SectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4169002402597F00781B89 /* SectionView.xib */; };
+		AC41690A24025E2A00781B89 /* Contain_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41690824025E2A00781B89 /* Contain_Cell.swift */; };
+		AC41690B24025E2A00781B89 /* Contain_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC41690924025E2A00781B89 /* Contain_Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		AC4168EB2402589D00781B89 /* Folding_TableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Folding_TableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4168EF2402589D00781B89 /* Folding_TableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folding_TableUITests.swift; sourceTree = "<group>"; };
 		AC4168F12402589D00781B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4168FE2402597300781B89 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		AC4169002402597F00781B89 /* SectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionView.xib; sourceTree = "<group>"; };
+		AC41690824025E2A00781B89 /* Contain_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contain_Cell.swift; sourceTree = "<group>"; };
+		AC41690924025E2A00781B89 /* Contain_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Contain_Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		AC4168CC2402589A00781B89 /* Folding_Table */ = {
 			isa = PBXGroup;
 			children = (
+				AC41690624025DE800781B89 /* Cell */,
 				AC4168CD2402589A00781B89 /* AppDelegate.swift */,
 				AC4168CF2402589A00781B89 /* SceneDelegate.swift */,
 				AC4168D12402589A00781B89 /* ViewController.swift */,
@@ -126,6 +135,33 @@
 				AC4168F12402589D00781B89 /* Info.plist */,
 			);
 			path = Folding_TableUITests;
+			sourceTree = "<group>";
+		};
+		AC4168FD240258FF00781B89 /* head_view */ = {
+			isa = PBXGroup;
+			children = (
+				AC4168FE2402597300781B89 /* SectionView.swift */,
+				AC4169002402597F00781B89 /* SectionView.xib */,
+			);
+			path = head_view;
+			sourceTree = "<group>";
+		};
+		AC41690624025DE800781B89 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AC41690724025DF500781B89 /* contain_cell */,
+				AC4168FD240258FF00781B89 /* head_view */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AC41690724025DF500781B89 /* contain_cell */ = {
+			isa = PBXGroup;
+			children = (
+				AC41690824025E2A00781B89 /* Contain_Cell.swift */,
+				AC41690924025E2A00781B89 /* Contain_Cell.xib */,
+			);
+			path = contain_cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4168DA2402589D00781B89 /* LaunchScreen.storyboard in Resources */,
+				AC41690B24025E2A00781B89 /* Contain_Cell.xib in Resources */,
+				AC4169012402597F00781B89 /* SectionView.xib in Resources */,
 				AC4168D72402589D00781B89 /* Assets.xcassets in Resources */,
 				AC4168D52402589A00781B89 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4168FF2402597300781B89 /* SectionView.swift in Sources */,
+				AC41690A24025E2A00781B89 /* Contain_Cell.swift in Sources */,
 				AC4168D22402589A00781B89 /* ViewController.swift in Sources */,
 				AC4168CE2402589A00781B89 /* AppDelegate.swift in Sources */,
 				AC4168D02402589A00781B89 /* SceneDelegate.swift in Sources */,
@@ -435,12 +475,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZ4TCDRU7J;
 				INFOPLIST_FILE = Folding_Table/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Folding-Table";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Folding-Table.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,12 +494,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZ4TCDRU7J;
 				INFOPLIST_FILE = Folding_Table/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Folding-Table";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Folding-Table.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

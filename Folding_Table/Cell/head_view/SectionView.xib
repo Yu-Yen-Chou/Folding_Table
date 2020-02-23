@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SectionView" customModule="Folding_Table" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="616" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OI6-mU-tpI">
+                    <rect key="frame" x="0.0" y="10" width="616" height="102"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHP-kp-0CK">
+                            <rect key="frame" x="20" y="40.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="fmr-cX-IEu">
+                            <rect key="frame" x="566" y="36" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="duW-1Z-8AY"/>
+                                <constraint firstAttribute="width" constant="30" id="sGl-j1-tG9"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etF-Px-ej6">
+                            <rect key="frame" x="0.0" y="0.0" width="616" height="102"/>
+                            <connections>
+                                <action selector="pressExpendButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="UO9-d2-qvQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="MHP-kp-0CK" firstAttribute="centerY" secondItem="OI6-mU-tpI" secondAttribute="centerY" id="1vB-gf-fPv"/>
+                        <constraint firstAttribute="trailing" secondItem="fmr-cX-IEu" secondAttribute="trailing" constant="20" id="3Fn-AV-WSE"/>
+                        <constraint firstAttribute="trailing" secondItem="etF-Px-ej6" secondAttribute="trailing" id="DI8-nB-LVy"/>
+                        <constraint firstItem="fmr-cX-IEu" firstAttribute="centerY" secondItem="OI6-mU-tpI" secondAttribute="centerY" id="Let-xZ-hcd"/>
+                        <constraint firstAttribute="bottom" secondItem="etF-Px-ej6" secondAttribute="bottom" id="YQ6-NW-2sw"/>
+                        <constraint firstItem="etF-Px-ej6" firstAttribute="top" secondItem="OI6-mU-tpI" secondAttribute="top" id="Z4g-gW-Ysf"/>
+                        <constraint firstItem="etF-Px-ej6" firstAttribute="leading" secondItem="OI6-mU-tpI" secondAttribute="leading" id="uJ4-aG-djz"/>
+                        <constraint firstItem="MHP-kp-0CK" firstAttribute="leading" secondItem="OI6-mU-tpI" secondAttribute="leading" constant="20" id="y0n-6v-gch"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OI6-mU-tpI" secondAttribute="bottom" constant="10" id="7ca-sk-GDA"/>
+                <constraint firstItem="OI6-mU-tpI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Tco-0s-1At"/>
+                <constraint firstItem="OI6-mU-tpI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="cBt-UA-6pe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OI6-mU-tpI" secondAttribute="trailing" id="eKN-df-37l"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="arrow_img" destination="fmr-cX-IEu" id="D2v-Gp-K9e"/>
+                <outlet property="bg_view" destination="OI6-mU-tpI" id="mPa-0x-Srj"/>
+                <outlet property="title" destination="MHP-kp-0CK" id="zxa-Wt-0NV"/>
+            </connections>
+            <point key="canvasLocation" x="252.17391304347828" y="10.714285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down" width="336" height="252"/>
+    </resources>
+</document>
